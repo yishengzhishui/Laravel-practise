@@ -46,6 +46,6 @@ class SessionsController extends Controller
     {
         Auth::logout();
         session()->flash('success', '成功退出');
-        return redirect('home');
+        return redirect('/');
     }
 }
